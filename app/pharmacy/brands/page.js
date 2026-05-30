@@ -109,7 +109,7 @@ export default function BrandsPage() {
         <div className="max-w-md mx-auto">
           <h1 className="text-xl font-bold text-orange-800 mt-4 mb-1">Stock &amp; Brands</h1>
           <p className="text-xs text-gray-500 mb-4">
-            Pick a medicine, then add its brand, price, stock &amp; expiry
+            Pick a medicine, then add its brand, price, stock &amp; expiry date
           </p>
 
           <button
