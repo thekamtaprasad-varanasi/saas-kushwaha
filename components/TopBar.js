@@ -9,17 +9,13 @@ const NAV = {
     { href: "/doctor/reminders", label: "Reminders", icon: "🔔" },
     { href: "/doctor/settings", label: "Settings", icon: "⚙️" },
   ],
-  receptionist: [
-    { href: "/receptionist", label: "Reception", icon: "🏥" },
-  ],
+  receptionist: [{ href: "/receptionist", label: "Reception", icon: "🏥" }],
   pharmacy: [
     { href: "/pharmacy", label: "Queue", icon: "💊" },
     { href: "/pharmacy/walkin", label: "Walk-in", icon: "🚶" },
     { href: "/pharmacy/brands", label: "Brands", icon: "🏷️" },
   ],
-  psychologist: [
-    { href: "/psychologist", label: "Patients", icon: "🧠" },
-  ],
+  psychologist: [{ href: "/psychologist", label: "Patients", icon: "🧠" }],
 };
 
 export default function TopBar({ role, name }) {
@@ -34,7 +30,6 @@ export default function TopBar({ role, name }) {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-indigo-900 shadow-md">
       <div className="max-w-2xl mx-auto flex items-center gap-1 px-3 py-2 overflow-x-auto scrollbar-none">
-
         {/* Home */}
         <Link
           href="/home"
@@ -73,18 +68,12 @@ export default function TopBar({ role, name }) {
         <div className="flex-1" />
 
         {/* Name + Logout */}
-        {name && (
-          <span className="text-indigo-300 text-xs whitespace-nowrap hidden sm:block">
-            {name.split(" ")[0]}
-          </span>
-        )}
         <button
           onClick={handleLogout}
           className="text-red-300 text-sm px-2 py-1.5 rounded-lg hover:bg-indigo-800 whitespace-nowrap transition"
         >
           🚪
         </button>
-
       </div>
     </div>
   );
