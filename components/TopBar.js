@@ -42,6 +42,17 @@ export default function TopBar({ role, name }) {
           <span>🏠</span>
           <span>Home</span>
         </Link>
+        <Link
+          href="/help"
+          className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium whitespace-nowrap transition ${
+            pathname === "/help"
+              ? "bg-white text-indigo-900"
+              : "text-indigo-200 hover:bg-indigo-800"
+          }`}
+        >
+          <span>❓</span>
+          <span>Help</span>
+        </Link>
         {/* Role links — PC only */}
         <div className="hidden md:flex items-center gap-1">
           {items.map((item) => {
