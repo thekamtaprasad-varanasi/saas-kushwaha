@@ -42,27 +42,28 @@ export default function TopBar({ role, name }) {
           <span>🏠</span>
           <span>Home</span>
         </Link>
-
-        {/* Role links */}
-        {items.map((item) => {
-          const active =
-            pathname === item.href ||
-            (item.href !== "/" + role && pathname.startsWith(item.href));
-          return (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium whitespace-nowrap transition ${
-                active
-                  ? "bg-white text-indigo-900"
-                  : "text-indigo-200 hover:bg-indigo-800"
-              }`}
-            >
-              <span>{item.icon}</span>
-              <span>{item.label}</span>
-            </Link>
-          );
-        })}
+        {/* Role links — PC only */}
+        <div className="hidden md:flex items-center gap-1">
+          {items.map((item) => {
+            const active =
+              pathname === item.href ||
+              (item.href !== "/" + role && pathname.startsWith(item.href));
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium whitespace-nowrap transition ${
+                  active
+                    ? "bg-white text-indigo-900"
+                    : "text-indigo-200 hover:bg-indigo-800"
+                }`}
+              >
+                <span>{item.icon}</span>
+                <span>{item.label}</span>
+              </Link>
+            );
+          })}
+        </div>
 
         {/* Spacer */}
         <div className="flex-1" />
