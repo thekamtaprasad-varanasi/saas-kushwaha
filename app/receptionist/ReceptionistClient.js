@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import BottomNav from "@/components/BottomNav";
 
 export default function ReceptionistClient() {
   const [name, setName] = useState("");
@@ -123,7 +122,7 @@ export default function ReceptionistClient() {
 
   return (
     <>
-      <main className="min-h-screen bg-indigo-50 p-4 pb-24">
+      <main className="min-h-screen bg-indigo-50 p-4 pb-4">
         <div className="max-w-md mx-auto">
           <h1 className="text-2xl font-bold text-indigo-800 mb-6 mt-4">
             New Patient Entry
@@ -270,7 +269,6 @@ export default function ReceptionistClient() {
           </div>
         </div>
       </main>
-      <BottomNav role="receptionist" />
     </>
   );
 }

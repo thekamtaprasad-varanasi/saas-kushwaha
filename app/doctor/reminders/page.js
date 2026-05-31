@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import BottomNav from "@/components/BottomNav";
 
 function buildMessage(patientName, clinicName, followupDate) {
   const msg = `Namaste ${patientName} ji,\n\nYeh reminder hai ki aapki follow-up visit ${clinicName} par ${followupDate} ko hai.\n\nKripya time par aayen. Dawa niyamit le rahe hain na?\n\nDhanyavaad.`;
@@ -60,7 +59,7 @@ export default function RemindersPage() {
 
   return (
     <>
-      <main className="min-h-screen bg-emerald-50 p-4 pb-24">
+      <main className="min-h-screen bg-emerald-50 p-4 pb-4">
         <div className="max-w-lg mx-auto">
           <button
             onClick={() => router.back()}
@@ -155,7 +154,6 @@ export default function RemindersPage() {
           </div>
         </div>
       </main>
-      <BottomNav role="doctor" />
     </>
   );
 }

@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import BottomNav from "@/components/BottomNav";
 
 export default function PsychologistPage() {
   const [queue, setQueue] = useState([]);
@@ -29,7 +28,7 @@ export default function PsychologistPage() {
 
   return (
     <>
-      <main className="min-h-screen bg-purple-50 p-4 pb-24">
+      <main className="min-h-screen bg-purple-50 p-4 pb-4">
         <div className="max-w-md mx-auto">
           <h1 className="text-xl font-bold text-purple-800 mt-4 mb-1">
             Psychologist Queue
@@ -76,7 +75,6 @@ export default function PsychologistPage() {
           </div>
         </div>
       </main>
-      <BottomNav role="psychologist" />
     </>
   );
 }

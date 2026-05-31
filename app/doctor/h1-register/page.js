@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import BottomNav from "@/components/BottomNav";
 
 export default function H1RegisterPage() {
   const router = useRouter();
@@ -46,7 +45,7 @@ export default function H1RegisterPage() {
         }
       `}</style>
 
-      <main className="min-h-screen bg-emerald-50 p-4 pb-24 no-print">
+      <main className="min-h-screen bg-emerald-50 p-4 pb-4 no-print">
         <div className="max-w-2xl mx-auto">
           <button
             onClick={() => router.back()}
@@ -178,8 +177,6 @@ export default function H1RegisterPage() {
           </tbody>
         </table>
       </div>
-
-      <BottomNav role="doctor" />
     </>
   );
 }

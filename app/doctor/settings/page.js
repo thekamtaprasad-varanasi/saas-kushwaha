@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import BottomNav from "@/components/BottomNav";
 
 function SettingsContent() {
   const router = useRouter();
@@ -179,7 +178,7 @@ function SettingsContent() {
     return <p className="text-center mt-20 text-gray-400">Loading...</p>;
 
   return (
-    <main className="min-h-screen bg-emerald-50 p-4 pb-24">
+    <main className="min-h-screen bg-emerald-50 p-4 pb-4">
       <div className="max-w-md mx-auto">
         <h1 className="text-xl font-bold text-emerald-800 mt-4 mb-5">
           {isFirst ? "Setup Your Clinic" : "Settings"}
@@ -543,7 +542,6 @@ export default function SettingsPage() {
       fallback={<p className="text-center mt-20 text-gray-400">Loading...</p>}
     >
       <SettingsContent />
-      <BottomNav role="doctor" />
     </Suspense>
   );
 }

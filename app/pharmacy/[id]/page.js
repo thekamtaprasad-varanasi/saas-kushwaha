@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState, useMemo } from "react";
 import { useParams, useRouter } from "next/navigation";
-import BottomNav from "@/components/BottomNav";
 
 export default function PharmacyPrescriptionPage() {
   const { id } = useParams();
@@ -214,7 +213,7 @@ export default function PharmacyPrescriptionPage() {
         }
       `}</style>
 
-      <main className="min-h-screen bg-orange-50 p-4 pb-24 no-print">
+      <main className="min-h-screen bg-orange-50 p-4 pb-4 no-print">
         <div className="max-w-md mx-auto">
           <button
             onClick={() => router.back()}
@@ -565,8 +564,6 @@ export default function PharmacyPrescriptionPage() {
           Thank you · {clinicInfo?.name}
         </p>
       </div>
-
-      <BottomNav role="pharmacy" />
     </>
   );
 }

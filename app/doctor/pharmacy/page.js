@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useState, useMemo } from 'react';
-import BottomNav from '@/components/BottomNav';
 import { MEDICINES_BY_CONDITION, CONDITIONS } from '@/lib/medicines';
 
 export default function DoctorPharmacyPage() {
@@ -104,7 +103,7 @@ export default function DoctorPharmacyPage() {
 
   return (
     <>
-      <main className="min-h-screen bg-emerald-50 p-4 pb-24">
+      <main className="min-h-screen bg-emerald-50 p-4 pb-4">
         <div className="max-w-md mx-auto">
           <h1 className="text-xl font-bold text-emerald-800 mt-4 mb-1">Pharmacy Stock</h1>
           <p className="text-xs text-gray-500 mb-4">
@@ -287,8 +286,6 @@ export default function DoctorPharmacyPage() {
           </div>
         </div>
       )}
-
-      <BottomNav role="doctor" />
     </>
   );
 }

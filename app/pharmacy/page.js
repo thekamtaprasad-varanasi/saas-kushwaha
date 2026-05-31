@@ -1,7 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import BottomNav from '@/components/BottomNav';
 
 function waitTime(visitDate) {
   if (!visitDate) return '';
@@ -44,7 +43,7 @@ export default function PharmacyQueuePage() {
 
   return (
     <>
-      <main className="min-h-screen bg-orange-50 p-4 pb-24">
+      <main className="min-h-screen bg-orange-50 p-4 pb-4">
         <div className="max-w-md mx-auto">
           <div className="flex items-center justify-between mt-4 mb-2">
             <h1 className="text-2xl font-bold text-orange-800">
@@ -87,7 +86,6 @@ export default function PharmacyQueuePage() {
           </div>
         </div>
       </main>
-      <BottomNav role="pharmacy" />
     </>
   );
 }

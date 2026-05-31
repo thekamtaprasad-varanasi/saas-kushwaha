@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
-import BottomNav from "@/components/BottomNav";
 
 function fmtDate(raw) {
   if (!raw) return "";
@@ -120,7 +119,7 @@ export default function PatientSearchPage() {
 
   return (
     <>
-      <main className="min-h-screen bg-emerald-50 p-4 pb-24">
+      <main className="min-h-screen bg-emerald-50 p-4 pb-4">
         <div className="max-w-lg mx-auto">
           <h1 className="text-2xl font-bold text-emerald-800 mt-4 mb-4">
             Patient Search
@@ -328,7 +327,6 @@ export default function PatientSearchPage() {
           )}
         </div>
       </main>
-      <BottomNav role="doctor" />
     </>
   );
 }

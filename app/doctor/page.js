@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import BottomNav from "@/components/BottomNav";
 
 function fmtIST(visitDate) {
   if (!visitDate) return "";
@@ -111,7 +110,7 @@ export default function DoctorQueuePage() {
 
   return (
     <>
-      <main className="min-h-screen bg-emerald-50 p-4 pb-24">
+      <main className="min-h-screen bg-emerald-50 p-4 pb-4">
         <div className="max-w-md mx-auto">
           {/* Clinic Info Card */}
           {clinic?.name && (
@@ -213,7 +212,6 @@ export default function DoctorQueuePage() {
           </div>
         </div>
       </main>
-      <BottomNav role="doctor" />
     </>
   );
 }
