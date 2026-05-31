@@ -1,7 +1,6 @@
 export const dynamic = "force-dynamic";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { cookies } from "next/headers";
 import { getSession } from "@/lib/session";
 import TopBar from "@/components/TopBar";
 import ServiceWorker from "./ServiceWorker";
@@ -36,7 +35,7 @@ export default async function RootLayout({ children }) {
         {session ? (
           <>
             <TopBar role={session.role} name={session.name} />
-            <main className="max-w-2xl mx-auto px-4 pt-16 pb-8">
+            <main className="max-w-5xl mx-auto px-4 pt-16 pb-8">
               {children}
             </main>
           </>
