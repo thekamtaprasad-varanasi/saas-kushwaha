@@ -59,7 +59,7 @@ export default async function HomePage() {
 
       <div className="grid grid-cols-2 gap-3">
         {tiles.map((tile) => (
-          
+          <a
             key={tile.href}
             href={tile.href}
             className={`bg-white border border-gray-200 rounded-2xl p-4 flex flex-col gap-2 active:scale-95 transition ${c.card}`}

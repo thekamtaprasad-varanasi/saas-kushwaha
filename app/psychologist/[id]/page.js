@@ -137,7 +137,7 @@ export default function PsychologistAssessmentPage({ params }) {
   return (
     <main className="min-h-screen bg-purple-50 p-4 pb-4">
       <div className="max-w-md mx-auto">
-        
+        <a
           href="/psychologist"
           className="text-sm text-purple-600 mb-4 inline-block"
         >
