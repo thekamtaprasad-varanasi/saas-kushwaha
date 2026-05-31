@@ -142,7 +142,7 @@ export default async function HomePage() {
         </span>
       </div>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
         {tiles.map((tile) => (
           <a
             key={tile.href}
