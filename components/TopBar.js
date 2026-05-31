@@ -70,7 +70,7 @@ export default function TopBar({ role, name }) {
         {/* Name + Logout */}
         <button
           onClick={handleLogout}
-          className="text-red-300 text-sm px-2 py-1.5 rounded-lg hover:bg-indigo-800 whitespace-nowrap transition"
+          className="bg-transparent text-red-300 text-sm px-2 py-1.5 rounded-lg hover:bg-indigo-800 whitespace-nowrap transition"
         >
           🚪
         </button>
